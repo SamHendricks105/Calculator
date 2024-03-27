@@ -15,16 +15,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-        var Sum=0;
-        var Sum2=0;
+        var Sum=0f;
+        var Sum2=0f;
         var WhichSum =1; //1 means Sum and 2 means Sum2
         var WhichOp =0 // 1=(+) 2=(-) 3=(*) 4=(/)
         val operationStack = ArrayDeque(listOf(0))//1 =(+),2 =(-),3 =(*),4 =(/)
         fun Clear(view: View){
             val displayText: TextView = findViewById(/* id = */ R.id.textView)
-            Sum=0;
-            Sum2=0;
-            WhichSum =1 // Now when a number button is pushed sum will be impacted
+            Sum=0f;
+            Sum2=0f;
+            WhichSum =1 // Now when a number button is pushed, sum will be impacted
             displayText.setText(Sum.toString())
 
         }
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             val displayText: TextView = findViewById(/* id = */ R.id.textView)
 
             if (WhichSum == 1) {
-                    if (Sum != 0)
+                    if (Sum != 0f)
                     {
                         Sum *= 10
                     }
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                     }
             else if(WhichSum == 2)
             {
-                if (Sum2 != 0)
+                if (Sum2 != 0f)
                 {
                     Sum2 *= 10
                 }
@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity() {
             val displayText: TextView = findViewById(/* id = */ R.id.textView)
 
             if (WhichSum == 1) {
-                if (Sum != 0)
+                if (Sum != 0f)
                 {
                     Sum *= 10
                 }
@@ -89,7 +89,7 @@ class MainActivity : AppCompatActivity() {
             }
             else if(WhichSum == 2)
             {
-                if (Sum2 != 0)
+                if (Sum2 != 0f)
                 {
                     Sum2 *= 10
                 }
@@ -125,7 +125,7 @@ class MainActivity : AppCompatActivity() {
             val displayText: TextView = findViewById(/* id = */ R.id.textView)
 
             if (WhichSum == 1) {
-                if (Sum != 0)
+                if (Sum != 0f)
                 {
                     Sum *= 10
                 }
@@ -133,7 +133,7 @@ class MainActivity : AppCompatActivity() {
             }
             else if(WhichSum == 2)
             {
-                if (Sum2 != 0)
+                if (Sum2 != 0f)
                 {
                     Sum2 *= 10
                 }
@@ -169,7 +169,7 @@ class MainActivity : AppCompatActivity() {
             val displayText: TextView = findViewById(/* id = */ R.id.textView)
 
             if (WhichSum == 1) {
-                if (Sum != 0)
+                if (Sum != 0f)
                 {
                     Sum *= 10
                 }
@@ -177,7 +177,7 @@ class MainActivity : AppCompatActivity() {
             }
             else if(WhichSum == 2)
             {
-                if (Sum2 != 0)
+                if (Sum2 != 0f)
                 {
                     Sum2 *= 10
                 }
@@ -213,15 +213,15 @@ class MainActivity : AppCompatActivity() {
             val displayText: TextView = findViewById(/* id = */ R.id.textView)
 
             if (WhichSum == 1) {
-                if (Sum != 0)
+                if (Sum != 0f)
                 {
                     Sum *= 10
                 }
                 Sum += 5
             }
-            else if(WhichSum == 2)
+            else if(WhichSum == 2)// if which sum = 2 an operation button hs been pressed
             {
-                if (Sum2 != 0)
+                if (Sum2 != 0f)
                 {
                     Sum2 *= 10
                 }
@@ -257,15 +257,15 @@ class MainActivity : AppCompatActivity() {
             val displayText: TextView = findViewById(/* id = */ R.id.textView)
 
             if (WhichSum == 1) {
-                if (Sum != 0)
+                if (Sum != 0f)
                 {
                     Sum *= 10
                 }
                 Sum += 4
             }
-            else if(WhichSum == 2)
+            else if(WhichSum == 2)// if which sum = 2 an operation button hs been pressed
             {
-                if (Sum2 != 0)
+                if (Sum2 != 0f)
                 {
                     Sum2 *= 10
                 }
@@ -301,7 +301,7 @@ class MainActivity : AppCompatActivity() {
             val displayText: TextView = findViewById(/* id = */ R.id.textView)
 
             if (WhichSum == 1) {
-                if (Sum != 0)
+                if (Sum != 0f)
                 {
                     Sum *= 10
                 }
@@ -309,7 +309,7 @@ class MainActivity : AppCompatActivity() {
             }
             else if(WhichSum == 2)
             {
-                if (Sum2 != 0)
+                if (Sum2 != 0f)
                 {
                     Sum2 *= 10
                 }
@@ -345,15 +345,15 @@ class MainActivity : AppCompatActivity() {
             val displayText: TextView = findViewById(/* id = */ R.id.textView)
 
             if (WhichSum == 1) {
-                if (Sum != 0)
+                if (Sum != 0f)
                 {
                     Sum *= 10
                 }
                 Sum += 2
             }
-            else if(WhichSum == 2)
+            else if(WhichSum == 2)// if which sum = 2 an operation button hs been pressed
             {
-                if (Sum2 != 0)
+                if (Sum2 != 0f)
                 {
                     Sum2 *= 10
                 }
@@ -389,15 +389,15 @@ class MainActivity : AppCompatActivity() {
             val displayText: TextView = findViewById(/* id = */ R.id.textView)
 
             if (WhichSum == 1) {
-                if (Sum != 0)
+                if (Sum != 0f)
                 {
                     Sum *= 10
                 }
                 Sum += 1
             }
-            else if(WhichSum == 2)
+            else if(WhichSum == 2)// if which sum = 2 an operation button hs been pressed
             {
-                if (Sum2 != 0)
+                if (Sum2 != 0f)
                 {
                     Sum2 *= 10
                 }
@@ -433,15 +433,15 @@ class MainActivity : AppCompatActivity() {
         val displayText: TextView = findViewById(/* id = */ R.id.textView)
 
         if (WhichSum == 1) {
-            if (Sum != 0)
+            if (Sum != 0f)
             {
                 Sum *= 10
             }
             Sum += 0
         }
-        else if(WhichSum == 2)
+        else if(WhichSum == 2)// if which sum = 2 an operation button hs been pressed
         {
-            if (Sum2 != 0)
+            if (Sum2 != 0f)
             {
                 Sum2 *= 10
             }
@@ -525,7 +525,7 @@ class MainActivity : AppCompatActivity() {
             Sum = Sum / Sum2
         }
         WhichSum =1
-        Sum2 =0
+        Sum2 =0f
         displayText.setText("$Sum")
 
     }
